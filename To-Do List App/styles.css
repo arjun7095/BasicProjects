@@ -1,0 +1,188 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f06, #f0c);
+    color: #333;
+  }
+  
+  .container {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: translateY(-10px);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Input Section */
+  .input-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-section input[type="text"] {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  .input-section input[type="text"]:focus {
+    outline: none;
+    border-color: #f06;
+  }
+  
+  .input-section button {
+    background-color: #f06;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-section button:hover {
+    background-color: #e05;
+  }
+  
+  /* Task List */
+  ul#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #task-list li {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #task-list li:hover {
+    background-color: #f9f9f9;
+  }
+  
+  #task-list li.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /* Task Input (Editable) */
+  #task-list input[type="text"].task-text {
+    border: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  #task-list input[type="text"]:focus {
+    outline: none;
+    background-color: #f0f8ff;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+  }
+  
+  /* Buttons (Edit, Save, Delete) */
+  button.edit,
+  button.save,
+  button.delete {
+    background-color: #f06;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.edit:hover {
+    background-color: #e05;
+  }
+  
+  button.save:hover {
+    background-color: #4caf50;
+  }
+  
+  button.delete {
+    background-color: #ff6347;
+  }
+  
+  button.delete:hover {
+    background-color: #e6453d;
+  }
+  
+  /* Scrollbar Styling */
+  ul#task-list {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  ul#task-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ul#task-list::-webkit-scrollbar-thumb {
+    background: #f06;
+    border-radius: 10px;
+  }
+  
+  ul#task-list::-webkit-scrollbar-thumb:hover {
+    background: #e05;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  
+    .input-section {
+      flex-direction: column;
+    }
+  
+    .input-section input,
+    .input-section button {
+      width: 100%;
+      margin-bottom: 0.75rem;
+    }
+  
+    #task-list li {
+      grid-template-columns: auto 1fr auto;
+    }
+  }
+  

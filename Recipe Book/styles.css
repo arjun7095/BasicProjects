@@ -1,0 +1,230 @@
+/* General Body and Layout Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #1abc9c;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Search Bar Styling */
+#searchBar {
+    width: 50%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    margin: 20px auto;
+    display: block;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#searchBar:focus {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Section */
+#addRecipe {
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#addRecipe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#addRecipe h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1abc9c;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+#recipeForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#recipeForm input,
+#recipeForm textarea,
+#recipeForm button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#recipeForm input:focus,
+#recipeForm textarea:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+#recipeForm textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+#recipeForm input[type="file"] {
+    padding: 10px;
+}
+
+#recipeForm button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#recipeForm button:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+#recipeForm button.updateBtn {
+    background-color: #ffa726;
+}
+
+#recipeForm button.updateBtn:hover {
+    background-color: #fb8c00;
+}
+
+/* Recipe List Section */
+#recipeList h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1abc9c;
+}
+
+#recipesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Recipe Card Styling */
+.recipe {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.recipe img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+}
+
+.recipe h3 {
+    font-size: 1.6rem;
+    padding: 15px;
+    margin: 0;
+    background-color: #f4f6f7;
+    text-align: center;
+    color: #333;
+}
+
+.recipe p {
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Buttons in Recipe Cards */
+.recipe button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.recipe button:hover {
+    transform: scale(1.05);
+}
+
+.recipe button.editBtn {
+    background-color: #ffa726;
+    color: white;
+}
+
+.recipe button.editBtn:hover {
+    background-color: #fb8c00;
+}
+
+.recipe button.deleteBtn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.recipe button.deleteBtn:hover {
+    background-color: #c0392b;
+}
+
+/* Advanced Animation for Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #searchBar {
+        width: 90%;
+    }
+
+    #addRecipe {
+        margin: 20px;
+    }
+
+    #recipesContainer {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script defer src="scripts.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <aside>
+            <ul class="Links">
+                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </li>
+                <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+                    <p>About Me</p>
+                </li>
+                <li onclick="Navigate(2)"><i class="fa-solid fa-user"></i>
+                    <p>Experience</p>
+                </li>
+                <li onclick="Navigate(3)"><i class="fa-solid fa-user"></i>
+                    <p>Projects</p>
+                </li>
+                <li onclick="Navigate(4)"><i class="fa-solid fa-user"></i>
+                    <p>Contact Me</p>
+                </li>
+            </ul>
+        </aside>
+        <div class="swiper mySwiper">
+            <div class="SlideContainer swiper-wrapper">
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1>Hi! I'am <span class="stylized-name">Boyapati Durgamallikarjuna</span>,</h1>
+                        <h2>A <span class="profession">Full Stack Web Developer</span></h2>
+                        <p class="heroline">Skills are MEAN and MERN stack implementation and AWS cloud Services</p>
+                        <div class="buttonGroup"><button>Hire Me</button><button onclick="Navigate(4)">Contact Me</button></div>
+                    </div>
+                    <div class="SideImg">
+                        
+                        <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/path-in-heavy-snow-in-winter-forest-during-sunset-free-photo.jpg?w=2210&quality=70" alt="">
+                        
+                    </div>
+                    <p class="slide-help">Scroll for next slide <i class="fa-solid f-chevron-right fa-shake"></i></p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-us">
+                        <h1 class="heading">About Me</h1>
+                        <h3 class="sub-heading">I'm Boyapati Durgamallikarjuna, <span class="profession">A web Developer</span></h3>
+                        <p class="about-details">Highly skilled MERN Stack developer bringing 2 years of experience in designing and developing 
+                            robust web applications. Proficient in front-end and back-end technologies, including React.js, Node.js, MongoDB, and
+                            Express.js. Strong understanding of responsive design principles and cross-browser compatibility. Proven ability to meet
+                            tight deadlines and deliver high-quality code. A collaborative team player, dedicated to ensuring seamless user 
+                            experiences and designing scalable solutions.
+                        </p>
+                        <div class="about-me-division">
+                            <div class="about-me-tabe">
+                                <li><span>Experiance:</span> 1+ years</li>
+                                <li><span>Country:</span> India</li>
+                                <li><span>Availability:</span> 24/7</li>
+                                <li><span>Age:</span> 24</li>
+                                <li><span>Phone:</span> +91 7095111547</li>
+                                <li><span>Language Known:</span> Telugu,English</li>
+                                <li><span>Degree:</span> Btech in ECE</li>
+                                <div class="buttonGroup"><button>Hire Me</button><button onclick="Navigate(4)">Contact Me</button></div>
+                            </div>
+                            <div class="skill-bar">
+                                <li>
+                                    <p>HTML</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:90%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>CSS</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:90%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>JavaScript</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:85%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>MERN(MongoDB, ExpressJs, ReactJs, NodeJS)</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:80%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>AWS Cloud</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:80%;"></div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services">
+                    <h1 class="heading">Experience</h1>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-desktop"></i></div>
+                        <h2>Front-End Developing</h2>
+                        <p>I was done the projects using the ReactJs framewok with 1 year experience and also developed the front-end websites using HTML,CSS and JavaScript</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                        <h2>Backend Developing</h2>
+                        <p> I have a knpwledge on the creating the API's at backend with 6 months of experience and connection for database and done some projects.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                        <h2>Full Stack Developing</h2>
+                        <p>I was gone through 6 months of training in mern stack and I have 6 months of experience in Mphasis Limited on Full Stack Developing</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                        <h2>Python</h2>
+                        <p>I have 2 years of experience of Python Programming Language.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-cloud"></i></div>
+                        <h2>AWS Cloud</h2>
+                        <p>I have real-time experience of 6 months in AWS cloud services and also done deployments in cloud.</p>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide gallery">
+                    <h1 class="heading"> Gallery</h1>
+                    <div class="project"><img src="./Payroll Management System.png" alt=""><p>Payroll Management System App using MERN Stack</p></div>
+                    <div class="project"><img src="./Hotel Booking App.png" alt=""><p>Hotel Booking App using MERN Stack</p></div>
+                    <div class="project"><img src="./Image Slider.png" alt=""><p>Image Slider App using HTML, CSS and JavaScript</p></div>
+                    <div class="project"><img src="./Interactive Quiz.png" alt=""><p>Interactive Quiz App using HTML, CSS and JavaScript</p></div>
+                    <div class="project"><img src="./Recipe Book.png" alt=""><p>Recipe Book App using HTML, CSS and JavaScript</p></div>
+                    <div class="project"><img src="./To-Do List.png" alt=""><p>To-Do List App using HTML, CSS and JavaScript</p></div>
+                </div>
+                <div class="swiper-slide contactMe">
+                    <h1 class="heading">Contact Me</h1>
+                    <div class="contactInfo"><i class="fa-solid fa-phone"></i>
+                        <h3>Mobile No</h3>
+                        <p>+91 7095111547</p>
+                    </div>
+                    <div class="contactInfo"><i class="fa-solid fa-location"></i>
+                        <h3>Location</h3>
+                        <p>Hyderabad, India</p>
+                    </div>
+                    <div class="contactInfo"><i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>boyapatidurga8@gmail.com</p>
+                    </div>
+                    <form>
+                        <h2>Send Me & Messege 
+                            <div class="socialLinks">
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                        </h2>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="email">
+                        <textarea rows="10" placeholder="Type your message here..."></textarea>
+                        <button class="primary">Send</button>
+                    </form>
+                    <footer>
+                        <li>Copyright @ 2024 Arjun.</li>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
